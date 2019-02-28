@@ -20,7 +20,7 @@ $(window).load(function () {
     //footer
     var windowHeight = $(window).height(),
         footerHeight = $('footer').height(),
-        heightDocument = (windowHeight) + ($('.contenido').height()) + ($('footer').height()) - 40;
+        heightDocument = (windowHeight) + ($('.contenido').height()) + ($('.contenido').height()) + ($('footer').height()) - 40;
     $('#animacion_scroll, #animacion_scroll_principal').css({
         'height': heightDocument + 'px'
     });
