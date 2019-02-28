@@ -30,11 +30,7 @@ $(window).load(function(){
     });
 
     // Defino el tamaño del "header" y el "contenido".
-    $('header').css({
-        'height' : windowHeight + 'px',
-        'line-height' : windowHeight + 'px'
-    });
-
+    
     $('.contenedor_parallax').css({
         'margin-top' : windowHeight + 'px'
     });
