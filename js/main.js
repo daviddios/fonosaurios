@@ -20,7 +20,8 @@ $(window).load(function () {
     //footer
     var windowHeight = $(window).height(),
         footerHeight = $('footer').height(),
-        heightDocument = (windowHeight) + ($('.contenido').height()) + ($('.contenido').height()) + ($('footer').height()) - 40;
+//por cada <section class="contenido"> tengo que incrementar el tamaño del documento en el js
+        heightDocument = (windowHeight) + ($('.contenido').height()) + ($('footer').height()) - 80;
     $('#animacion_scroll, #animacion_scroll_principal').css({
         'height': heightDocument + 'px'
     });
