@@ -2,103 +2,92 @@
   font-family: 'Airment';
   src: url(/etc/fonts/airment/airment-Regular.ttf);
 }
-
-
+html{
+ margin: 0 0 0 0;
+ padding: 0 0 0 0;
+}
 body {
   margin: 0 0 0 0;
   background-color: #20262e;
 }
 
-img {
-  display: block;
+header{
+  margin: auto auto auto auto;
   width: 100%;
-  height: auto;
+  height: 100%;
+  top: 0;
+  position: fixed;
+  z-index: -1;
 }
 
 p {
   margin: 0;
   padding: 1em 0;
 }
-
-#animacion_scroll_principal {
-  margin: 0 0 0 0;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  position: fixed;
+.parallax-window {
+  min-height: 800px;
+width: 100%;
+height: 100%;
+z-index: -102;
 }
-
-#heightPage, #heightScroll {
-  width: 10px;
-  top: 0;
-  position: absolute;
-  z-index: 99;
-}
-
-#heightPage {
-  left: 0;
-}
-
-#heightScroll {
-  right: 0;
-}
-
-header {
-  margin: auto auto auto auto;
+.fuckclass{
   width: 100%;
   height: 100%;
-  background: url(/img/headerbg2.jpg) no-repeat 50% 50%;
-  top: 0;
-  position: fixed;
+}
+
+.imgheader {
   z-index: -1;
 }
 
-header img {
-  margin: 10% auto 0 auto;
+
+img {
+  margin: 0 0 0 0;
   width: 30%;
 }
 
 @media (max-width: 1024px) {
-  header img {
-    margin: 40% auto 0 auto;
+  img {
+    margin: 0 auto 0 auto;
     width: 70%;
   }
 }
+
 .navbar {
-  margin-top: 860px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   padding: 10px 16px;
   background: black;
   color: #f1f1f1;
-  z-index: 100;
+  z-index: 102;
   text-align: center
 }
 
+/* Pantalla apple */
 @media (min-height: 977px) {
-  .navbar{
-    margin-top: 890px;
+.navbar {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    padding: 10px 16px;
+    padding: 10px 0px 10px 0px;
     background: black;
     color: #f1f1f1;
-    z-index: 100;
+    z-index: 102;
     text-align: center
-  }} 
+  }
+}
+
 
 section {
-  height: 2000px;
+  height: 100%;
+  margin: 0 0 100px 0;
+  z-index: 1;
 }
 
 footer {
   width: 100%;
   height: 300px;
   background: gray;
-  bottom: -300px;
-  position: fixed;
   z-index: -1;
 }
 
@@ -109,11 +98,7 @@ footer {
 }
 
 
-.contenedor_parallax {
-  margin-top: 100%;
-  margin-bottom: 300px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-}
+
 
 h1 {
   padding: 0 0 0 0;
@@ -140,4 +125,3 @@ h1 {
 footer h1 {
   line-height: 300px;
 }
-
