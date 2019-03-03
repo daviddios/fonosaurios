@@ -2,18 +2,20 @@
   font-family: 'Airment';
   src: url(/etc/fonts/airment/airment-Regular.ttf);
 }
-html{
- margin: 0 0 0 0;
- padding: 0 0 0 0;
+
+html {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
+
 body {
-  position: relative; 
+  position: relative;
   z-index: 0;
   margin: 0 0 0 0;
   background-color: #20262e;
 }
 
-header{
+header {
   margin: auto auto auto auto;
   width: 100%;
   height: 100%;
@@ -24,13 +26,15 @@ p {
   margin: 0;
   padding: 1em 0;
 }
+
 .parallax-window {
   min-height: 800px;
-width: 100%;
-height: 100%;
-z-index: -102;
+  width: 100%;
+  height: 100%;
+  z-index: -102;
 }
-.fuckclass{
+
+.fuckclass {
   width: 100%;
   height: 100%;
 }
@@ -65,7 +69,7 @@ img {
 
 /* Pantalla apple */
 @media (min-height: 977px) {
-.navbar {
+  .navbar {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
