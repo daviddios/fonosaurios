@@ -35,13 +35,6 @@ header img {
   width: 400px;
 }
 
-/* @media (max-width: 1024px) {
-  header img {
-    margin: 10vw;
-    width: 70%;
-  }
-} */
-
 .navbar {
   position: -webkit-sticky;
   position: sticky;
