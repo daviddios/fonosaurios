@@ -1,3 +1,8 @@
+* {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
 @font-face {
   font-family: 'Airment';
   src: url(/etc/fonts/airment/airment-Regular.ttf);
@@ -39,31 +44,53 @@ header img {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding: 10px 16px;
+  padding: 20px 16px;
   background: black;
   color: #f1f1f1;
   z-index: 102;
-  text-align: center
+  text-align: center;
 }
 
-/* Pantalla apple */
-@media (min-height: 977px) {
-  .navbar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    padding: 10px 0px 10px 0px;
-    background: black;
-    color: #f1f1f1;
-    z-index: 102;
-    text-align: center
-  }
+.nav_boton {
+  display: inline;
+  color: #ddd;
+  text-decoration: none;
+  padding: 1em;
+  font-weight: 400;
 }
 
+.nav_boton:hover {
+  background-color: #aaa;
+  border-radius: 3px;
+}
+
+.nav_boton.active {
+  color: red;
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
 section {
   height: 100%;
   margin: 0 0 0 0;
+}
+
+.contenido {
+  background: #ededed;
+  position: relative;
+  z-index: 1;
+}
+
+.seccion {
+  height: 600px;
+  width: 100%;
+  padding: 0;
+  background: linear-gradient(45deg, #43cea2 10%, #185a9d 90%);
+  color: white;
+}
+
+.seccion h1 {
+  text-align: center;
+  margin: 0;
 }
 
 footer {
@@ -74,41 +101,7 @@ footer {
   z-index: -1;
 }
 
-.contenido {
-  background: #ededed;
-  position: relative;
-  z-index: 1;
-}
-
-
 p {
   margin: 0;
   padding: 1em 0;
-}
-
-
-h1 {
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
-  text-align: center;
-  font-family: 'Airment';
-  font-size: 11vw;
-  color: #fff;
-}
-
-@media (max-width: 1024px) {
-  h1 {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    text-align: center;
-    font-family: 'Airment';
-    font-size: 15vw;
-    color: #fff;
-  }
-}
-
-
-
-footer h1 {
-  line-height: 300px;
 }
