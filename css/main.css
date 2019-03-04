@@ -68,7 +68,9 @@ header img {
   color: red;
   background-color: rgba(0, 0, 0, 0.1);
 }
-
+.seccion{
+  text-align: center;
+}
 section {
   height: 100%;
   margin: 0 0 0 0;
@@ -79,18 +81,108 @@ section {
   position: relative;
   z-index: 1;
 }
-
-.seccion {
-  height: 600px;
+i{
+  font-size: 10vh;
+  padding-bottom: 5%;
+}
+.apartado1 {
+  text-align: center;
+  display: grid;
+  grid-template-areas:  "item1 item2 item3"
+  "item4 item5 item6"
+  "item7 item8 item9";
+  grid-template-columns: 15% auto 15%;
+  grid-template-rows: auto;
+  height: 500px;
   width: 100%;
+  padding: 5% 0 0 0;;
+  background: linear-gradient(45deg, #fff5c6 10%, #3182d3 90%);
+  color: black;
+}
+.b {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 3%;
+  grid-area: item5;
   padding: 0;
-  background: linear-gradient(45deg, #43cea2 10%, #185a9d 90%);
-  color: white;
+}
+.b h1{
+
+  font-size: 4vw;
+}
+.b h2{
+  font-size: 4vw;
 }
 
-.seccion h1 {
+.apartado1 h1 {
   text-align: center;
   margin: 0;
+}
+.apartado2 {
+  text-align: center;
+  display: grid;
+  grid-template-areas:  "pad1 sp1 item4 sp2 item5 sp3 item6 sp4 pad2";
+  grid-template-columns: 10% 5% 20% 5% 20% 5% 20% 5% 10%;
+  grid-template-rows: auto;
+  height: 100%;
+  padding: 10% 0 5% 0;;
+  background: linear-gradient(45deg, #94f8ff 10%, #c1ffd3 90%);
+  color: black;
+}
+@media (max-width: 1024px){
+  .apartado2 {
+    grid-template-areas: "pad1" "sp1" "item4" "sp2" "item5" "sp3" "item6" "sp4" "pad2";
+    grid-template-columns: auto;
+    grid-template-rows: 10% 5% auto 5% auto 5% auto 5% 10%;
+  }
+  .d, .e, .f{
+    margin: 0 20% 5%;
+  }
+}
+.d{
+  padding: 5%;
+  background: white;
+  font-size: 2vh;
+  grid-area: item4;
+}
+.e{
+  padding: 5%;
+  background: white;
+  font-size: 2vh;
+  grid-area: item5;
+}
+.f{
+  padding: 5%;
+  background: white;
+  font-size: 2vh;
+  grid-area: item6;
+}
+.apartado3 {
+  text-align: center;
+  display: grid;
+  grid-template-areas:  "item1 item2 item3"
+                        "item4 item5 item6";
+  grid-template-columns: 15% auto 15%;
+  grid-template-rows: auto;
+  height: 600px;
+  width: 100%;
+  padding: 5% 0 0 0;;
+  background: linear-gradient(45deg, #ceb543 10%, #3182d3 90%);
+  color: white;
+}
+.apartado4 {
+  text-align: center;
+  display: grid;
+  grid-template-areas:  "item1 item2 item3"
+                        "item4 item5 item6";
+  grid-template-columns: 15% auto 15%;
+  grid-template-rows: auto;
+  height: 800px;
+  width: 100%;
+  padding: 5% 0 0 0;;
+  background: linear-gradient(45deg, #ceb543 10%, #3182d3 90%);
+  color: white;
 }
 
 footer {
